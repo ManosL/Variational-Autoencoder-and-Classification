@@ -1,0 +1,296 @@
+Autoencoder 1: 
+(weights1.h5 = weights for Autoencoder 1)
+(classifiers in this section(1-23) use weights1)
+
+layers: 3, filter_height: 3, filter_width: 3
+epochs: 30, batch 128
+filter: 1 32 max pool: (2, 2) dropout: 0.100000
+filter: 2 64 max pool: (2, 2) dropout: 0.000000
+filter: 3 128 max pool: (0, 0) dropout: 0.000000
+
+classifier 1:
+epochs: 10, batch: 128, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs: 10, batch: 128
+
+classifier 2:
+epochs: 10, batch: 64, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:10, batch:64
+
+classifier 3:
+epochs: 10, batch: 128, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:10, batch:128
+
+classifier 4:
+epochs: 10, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:7, batch:32
+
+classifier 5:
+epochs: 10, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:128
+
+classifier 6:
+epochs: 10, batch: 128, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:128
+
+classifier 7:
+epochs: 10, batch: 128, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:32
+
+classifier 8:
+epochs: 10, batch: 128, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:7, batch:128
+
+classifier 9:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:32
+
+classifier 10:
+epochs: 10, batch: 64, neurons: 64
+Flatten layer-dropout: 0.200000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:128
+
+classifier 11:
+epochs: 10, batch: 200, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:8, batch:200
+
+classifier 12:
+epochs: 10, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:8, batch:32
+
+classifier 13:
+epochs: 10, batch: 128, neurons: 128
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:128
+
+classifier 14:
+epochs: 10, batch: 32, neurons: 128
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:32
+
+classifier 15:
+epochs: 10, batch: 128, neurons: 128
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:128
+
+classifier 16:
+epochs: 10, batch: 32, neurons: 128
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:128
+
+classifier 17:
+epochs: 10, batch: 32, neurons: 128
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:32
+
+classifier 18:
+epochs: 10, batch: 128, neurons: 128
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.000000
+merged model:
+epochs:5, batch:128
+
+classifier 19:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.200000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:32
+
+classifier 20:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.200000
+FC layer-dropout: 0.000000
+merged model:
+epochs:5, batch:32
+
+classifier 21:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:32
+
+classifier 22:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.000000
+merged model:
+epochs:5, batch:32
+
+classifier 23:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.300000
+FC layer-dropout: 0.000000
+merged model:
+epochs:5, batch:32
+
+
+Autoencoder 2:
+(weights2.h5 = weights for Autoencoder 2)
+(classifiers in this section(1-4) use weights1)
+
+layers: 4, filter_height: 3, filter_width: 3
+epochs: 15, batch 64
+filter: 1 16 max pool: (0, 0) dropout: 0.000000
+filter: 2 32 max pool: (2, 2) dropout: 0.000000
+filter: 3 64 max pool: (2, 2) dropout: 0.000000
+filter: 4 128 max pool: (0, 0) dropout: 0.000000
+
+
+classifier 1:
+epochs: 10, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.000000
+merged model:
+epochs:5, batch:32
+
+classifier 2:
+epochs: 15, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:32
+
+classifier 3:
+epochs: 15, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:128
+
+classifier 4:
+epochs: 15, batch: 64, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:64
+
+Autoencoder 3: 
+
+layers: 3, filter_height: 3, filter_width: 3
+epochs: 15, batch 64
+filter: 1 16 max pool: (2, 2) dropout: 0.000000
+filter: 2 32 max pool: (2, 2) dropout: 0.100000
+filter: 3 128 max pool: (0, 0) dropout: 0.000000
+
+classifier 1:
+epochs: 17, batch: 64, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:64
+
+classifier 2:
+epochs: 17, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:32
+
+Autoencoder 4: 
+
+layers: 3, filter_height: 3, filter_width: 3
+epochs: 10, batch 32
+filter: 1 16 max pool: (2, 2) dropout: 0.000000
+filter: 2 32 max pool: (2, 2) dropout: 0.000000
+filter: 3 64 max pool: (0, 0) dropout: 0.000000
+
+classifier 1:
+epochs: 15, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+merged model:
+epochs:5, batch:32
+
+Autoencoder 5: 
+
+layers: 3, filter_height: 3, filter_width: 3
+epochs: 15, batch 32
+filter: 1 32 max pool: (2, 2) dropout: 0.000000
+filter: 2 64 max pool: (2, 2) dropout: 0.000000
+filter: 3 128 max pool: (0, 0) dropout: 0.000000
+
+classifier 1:
+epochs: 5, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.000000
+merged model:
+epochs:10, batch:32
+
+classifier 2:
+epochs: 15, batch: 32, neurons: 64
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.000000
+merged model:
+epochs:5, batch:32
+
+classifier 3:
+epochs: 10, batch: 32, neurons: 256
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:32
+
+classifier 4:
+epochs: 20, batch: 64, neurons: 256
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+overfit-9.820
+
+classifier 5:
+epochs: 20, batch: 32, neurons: 256
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.100000
+overfit-9.820
+
+classifier 6:
+epochs: 10, batch: 64, neurons: 256
+Flatten layer-dropout: 0.000000
+FC layer-dropout: 0.200000
+merged model:
+epochs:5, batch:64
